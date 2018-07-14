@@ -22,6 +22,19 @@ http://www.saturnringstation.com/2017/04/20/spring-data-jpa-excludes-database-in
         HibernateJpaAutoConfiguration.class})
         </br>
 
+<h2> What is @SpringBootApplication annotation in spring boot? </h2> </br>
+Many Spring Boot developers always have their main class annotated with @Configuration, @EnableAutoConfiguration and @ComponentScan. Since these annotations are so frequently used together (especially if you follow the best practices above), Spring Boot provides a convenient @SpringBootApplication alternative.
+
+The @SpringBootApplication annotation is equivalent to using @Configuration, @EnableAutoConfiguration and @ComponentScan with their default attributes: </br>
+The following are the parameters accepted in the @SpringBootApplication annotation: </br>
+
+exclude: Exclude the list of classes from the auto configuration. </br>
+
+excludeNames: Exclude the list of fully qualified class names from the auto configuration. This parameter added since spring boot 1.3.0. </br>
+
+scanBasePackageClasses: Provide the list of classes that has to be applied for the @ComponentScan. </br>
+
+scanBasePackages Provide the list of packages that has to be applied for the @ComponentScan. This parameter added since spring boot 1.3.0. </br>
 
 
 
